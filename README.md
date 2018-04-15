@@ -20,3 +20,6 @@ Kaggle page: https://www.kaggle.com/kemical/kickstarter-projects/data
 5. For the main-category with the most successfully funded projects (quantity, not rate of success), what is the goal-         
    amount range (usd_goal_real), e.g. range 0-10k$ , 5-15k$, 100k$-110k$, that contains the most successfully funded   
    projects (in quantity, not rate of success)?
+   
+## Answers
+
