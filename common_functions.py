@@ -8,14 +8,9 @@ def get_csv_reader(f):
     return reader
 
 
-def print_results_in_order(data, value_getter):
-    i = 1
-    for key in data:
-        base_indentation = 40
-        calculated_indentation = base_indentation - (len(key) + len(str(i)))
-        print(str(i) + '.',
-              key,
-              calculated_indentation * '.',
-              format(value_getter(key), ','),
-              'Eur')
-        i += 1
+def each_funded_project(reader, callback):
+    for row in reader:
+        goal = row[6]
+        pleged = row[8]
+        if goal <= pleged:
+            callback(row)

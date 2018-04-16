@@ -1,4 +1,5 @@
 import question1
+import question3
 from file_handler import download_csv_sheet
 
 
@@ -15,6 +16,7 @@ def run():
 
         print_question_separator(
             '3. What is the median pledged amount (usd_pledged_real) of successfully funded projects?')
+        question3.run(f)
 
         print_question_separator(
             '4. What is the number of successfully funded projects with more than 5.000$ pledged (usd_pledged_real) per category? (OPTIONAL: In case you decide to visualize all successful projects per category and you perceive any clusters in theresults, try to use the MeanShift algorithm on to see if your gut feeling was correct')
