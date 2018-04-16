@@ -1,4 +1,5 @@
 import question1
+import question2
 import question3
 from file_handler import download_csv_sheet
 
@@ -13,6 +14,8 @@ def run():
 
         print_question_separator(
             '2. For the main-category of project with highest success rate (question above), what is the category with the highest number of project proposals?')
+        question2.run(f, best_main_category)
+
 
         print_question_separator(
             '3. What is the median pledged amount (usd_pledged_real) of successfully funded projects?')
