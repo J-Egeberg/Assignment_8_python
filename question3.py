@@ -12,6 +12,5 @@ def run(f):
 
     each_funded_project(reader, add_pledged_amount)
     pledged_amounts.sort()
-    print(pledged_amounts)
     median = pledged_amounts[len(pledged_amounts) // 2]
     print(median)
