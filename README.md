@@ -24,7 +24,7 @@ Dance
 
 Question 3. What is the median pledged amount (usd_pledged_real) of successfully funded projects?
 
-3655.66
+5107.25
 
 Question 4. What is the number of successfully funded projects with more than 5.000$ pledged (usd_pledged_real) per category? (OPTIONAL: In case you decide to visualize all successful projects per category and you perceive any clusters in theresults, try to use the MeanShift algorithm on to see if your gut feeling was correct
 
