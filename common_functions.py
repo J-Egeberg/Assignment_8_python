@@ -13,7 +13,7 @@ def print_results_in_order(data, value_getter):
     for key in data:
         base_indentation = 40
         calculated_indentation = base_indentation - (len(key) + len(str(i)))
-        print(str(i)+'.',
+        print(str(i) + '.',
               key,
               calculated_indentation * '.',
               format(value_getter(key), ','),
