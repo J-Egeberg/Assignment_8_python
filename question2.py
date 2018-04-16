@@ -15,8 +15,6 @@ def run(f, best_main_category):
             categories_successful_projects_count.setdefault(category, 0)
             categories_successful_projects_count[category] += 1
 
-    if categories_successful_projects_count != {}:
-        category_most_successful = max(categories_successful_projects_count.items(), key=operator.itemgetter(1))[0]
-        print(category_most_successful)
-    else:
-        print("nothing")
+    category_most_successful = max(categories_successful_projects_count.items(), key=operator.itemgetter(1))[0]
+
+    print(category_most_successful)
