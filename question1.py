@@ -16,3 +16,4 @@ def run(f):
 
     best_main_category = max(main_categories_successful_projects_count.items(), key=operator.itemgetter(1))[0]
     print(best_main_category)
+    return best_main_category

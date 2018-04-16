@@ -8,7 +8,7 @@ def run():
     download_csv_sheet(csv_sheet_name, url)
     with open(csv_sheet_name, encoding='utf-8') as f:
         print_question_separator('1. What main-category of project has the highest success rate?')
-        question1.run(f)
+        best_main_category = question1.run(f)
 
         print_question_separator(
             '2. For the main-category of project with highest success rate (question above), what is the category with the highest number of project proposals?')
