@@ -10,7 +10,6 @@ def get_csv_reader(f):
 
 def each_funded_project(reader, callback):
     for row in reader:
-        goal = row[6]
-        pleged = row[8]
-        if goal <= pleged:
+        state = row[9]
+        if state == "successful":
             callback(row)
